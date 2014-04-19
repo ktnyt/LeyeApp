@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		586196D819030F6D000089C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586196D719030F6D000089C9 /* Foundation.framework */; };
+		586196DA19030F6D000089C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586196D919030F6D000089C9 /* CoreGraphics.framework */; };
+		586196DC19030F6D000089C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586196DB19030F6D000089C9 /* UIKit.framework */; };
+		586196E219030F6D000089C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 586196E019030F6D000089C9 /* InfoPlist.strings */; };
+		586196E419030F6D000089C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 586196E319030F6D000089C9 /* main.m */; };
+		586196E819030F6D000089C9 /* LAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 586196E719030F6D000089C9 /* LAAppDelegate.m */; };
+		586196EB19030F6D000089C9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586196E919030F6D000089C9 /* Main_iPhone.storyboard */; };
+		586196EE19030F6D000089C9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586196EC19030F6D000089C9 /* Main_iPad.storyboard */; };
+		586196F119030F6D000089C9 /* LAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586196F019030F6D000089C9 /* LAViewController.m */; };
+		586196F319030F6D000089C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586196F219030F6D000089C9 /* Images.xcassets */; };
+		586196FA19030F6D000089C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586196F919030F6D000089C9 /* XCTest.framework */; };
+		586196FB19030F6D000089C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586196D719030F6D000089C9 /* Foundation.framework */; };
+		586196FC19030F6D000089C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586196DB19030F6D000089C9 /* UIKit.framework */; };
+		5861970419030F6D000089C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5861970219030F6D000089C9 /* InfoPlist.strings */; };
+		5861970619030F6D000089C9 /* LeyeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5861970519030F6D000089C9 /* LeyeAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		586196FD19030F6D000089C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 586196CC19030F6C000089C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 586196D319030F6D000089C9;
+			remoteInfo = LeyeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		586196D419030F6D000089C9 /* LeyeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeyeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		586196D719030F6D000089C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		586196D919030F6D000089C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		586196DB19030F6D000089C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		586196DF19030F6D000089C9 /* LeyeApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeyeApp-Info.plist"; sourceTree = "<group>"; };
+		586196E119030F6D000089C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		586196E319030F6D000089C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		586196E519030F6D000089C9 /* LeyeApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeyeApp-Prefix.pch"; sourceTree = "<group>"; };
+		586196E619030F6D000089C9 /* LAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAAppDelegate.h; sourceTree = "<group>"; };
+		586196E719030F6D000089C9 /* LAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAAppDelegate.m; sourceTree = "<group>"; };
+		586196EA19030F6D000089C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		586196ED19030F6D000089C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		586196EF19030F6D000089C9 /* LAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAViewController.h; sourceTree = "<group>"; };
+		586196F019030F6D000089C9 /* LAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAViewController.m; sourceTree = "<group>"; };
+		586196F219030F6D000089C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		586196F819030F6D000089C9 /* LeyeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeyeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		586196F919030F6D000089C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5861970119030F6D000089C9 /* LeyeAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeyeAppTests-Info.plist"; sourceTree = "<group>"; };
+		5861970319030F6D000089C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5861970519030F6D000089C9 /* LeyeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeyeAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		586196D119030F6D000089C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586196DA19030F6D000089C9 /* CoreGraphics.framework in Frameworks */,
+				586196DC19030F6D000089C9 /* UIKit.framework in Frameworks */,
+				586196D819030F6D000089C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586196F519030F6D000089C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586196FA19030F6D000089C9 /* XCTest.framework in Frameworks */,
+				586196FC19030F6D000089C9 /* UIKit.framework in Frameworks */,
+				586196FB19030F6D000089C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		586196CB19030F6C000089C9 = {
+			isa = PBXGroup;
+			children = (
+				586196DD19030F6D000089C9 /* LeyeApp */,
+				586196FF19030F6D000089C9 /* LeyeAppTests */,
+				586196D619030F6D000089C9 /* Frameworks */,
+				586196D519030F6D000089C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		586196D519030F6D000089C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				586196D419030F6D000089C9 /* LeyeApp.app */,
+				586196F819030F6D000089C9 /* LeyeAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		586196D619030F6D000089C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				586196D719030F6D000089C9 /* Foundation.framework */,
+				586196D919030F6D000089C9 /* CoreGraphics.framework */,
+				586196DB19030F6D000089C9 /* UIKit.framework */,
+				586196F919030F6D000089C9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		586196DD19030F6D000089C9 /* LeyeApp */ = {
+			isa = PBXGroup;
+			children = (
+				586196E619030F6D000089C9 /* LAAppDelegate.h */,
+				586196E719030F6D000089C9 /* LAAppDelegate.m */,
+				586196E919030F6D000089C9 /* Main_iPhone.storyboard */,
+				586196EC19030F6D000089C9 /* Main_iPad.storyboard */,
+				586196EF19030F6D000089C9 /* LAViewController.h */,
+				586196F019030F6D000089C9 /* LAViewController.m */,
+				586196F219030F6D000089C9 /* Images.xcassets */,
+				586196DE19030F6D000089C9 /* Supporting Files */,
+			);
+			path = LeyeApp;
+			sourceTree = "<group>";
+		};
+		586196DE19030F6D000089C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				586196DF19030F6D000089C9 /* LeyeApp-Info.plist */,
+				586196E019030F6D000089C9 /* InfoPlist.strings */,
+				586196E319030F6D000089C9 /* main.m */,
+				586196E519030F6D000089C9 /* LeyeApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		586196FF19030F6D000089C9 /* LeyeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5861970519030F6D000089C9 /* LeyeAppTests.m */,
+				5861970019030F6D000089C9 /* Supporting Files */,
+			);
+			path = LeyeAppTests;
+			sourceTree = "<group>";
+		};
+		5861970019030F6D000089C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5861970119030F6D000089C9 /* LeyeAppTests-Info.plist */,
+				5861970219030F6D000089C9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		586196D319030F6D000089C9 /* LeyeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5861970919030F6D000089C9 /* Build configuration list for PBXNativeTarget "LeyeApp" */;
+			buildPhases = (
+				586196D019030F6D000089C9 /* Sources */,
+				586196D119030F6D000089C9 /* Frameworks */,
+				586196D219030F6D000089C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeyeApp;
+			productName = LeyeApp;
+			productReference = 586196D419030F6D000089C9 /* LeyeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		586196F719030F6D000089C9 /* LeyeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5861970C19030F6D000089C9 /* Build configuration list for PBXNativeTarget "LeyeAppTests" */;
+			buildPhases = (
+				586196F419030F6D000089C9 /* Sources */,
+				586196F519030F6D000089C9 /* Frameworks */,
+				586196F619030F6D000089C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				586196FE19030F6D000089C9 /* PBXTargetDependency */,
+			);
+			name = LeyeAppTests;
+			productName = LeyeAppTests;
+			productReference = 586196F819030F6D000089C9 /* LeyeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		586196CC19030F6C000089C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Kotone Itaya";
+				TargetAttributes = {
+					586196F719030F6D000089C9 = {
+						TestTargetID = 586196D319030F6D000089C9;
+					};
+				};
+			};
+			buildConfigurationList = 586196CF19030F6C000089C9 /* Build configuration list for PBXProject "LeyeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 586196CB19030F6C000089C9;
+			productRefGroup = 586196D519030F6D000089C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				586196D319030F6D000089C9 /* LeyeApp */,
+				586196F719030F6D000089C9 /* LeyeAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		586196D219030F6D000089C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586196EE19030F6D000089C9 /* Main_iPad.storyboard in Resources */,
+				586196F319030F6D000089C9 /* Images.xcassets in Resources */,
+				586196EB19030F6D000089C9 /* Main_iPhone.storyboard in Resources */,
+				586196E219030F6D000089C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586196F619030F6D000089C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5861970419030F6D000089C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		586196D019030F6D000089C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586196E419030F6D000089C9 /* main.m in Sources */,
+				586196E819030F6D000089C9 /* LAAppDelegate.m in Sources */,
+				586196F119030F6D000089C9 /* LAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586196F419030F6D000089C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5861970619030F6D000089C9 /* LeyeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		586196FE19030F6D000089C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 586196D319030F6D000089C9 /* LeyeApp */;
+			targetProxy = 586196FD19030F6D000089C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		586196E019030F6D000089C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				586196E119030F6D000089C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		586196E919030F6D000089C9 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				586196EA19030F6D000089C9 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		586196EC19030F6D000089C9 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				586196ED19030F6D000089C9 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5861970219030F6D000089C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5861970319030F6D000089C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5861970719030F6D000089C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5861970819030F6D000089C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5861970A19030F6D000089C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeyeApp/LeyeApp-Prefix.pch";
+				INFOPLIST_FILE = "LeyeApp/LeyeApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5861970B19030F6D000089C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeyeApp/LeyeApp-Prefix.pch";
+				INFOPLIST_FILE = "LeyeApp/LeyeApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5861970D19030F6D000089C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeyeApp.app/LeyeApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeyeApp/LeyeApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LeyeAppTests/LeyeAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5861970E19030F6D000089C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeyeApp.app/LeyeApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeyeApp/LeyeApp-Prefix.pch";
+				INFOPLIST_FILE = "LeyeAppTests/LeyeAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		586196CF19030F6C000089C9 /* Build configuration list for PBXProject "LeyeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5861970719030F6D000089C9 /* Debug */,
+				5861970819030F6D000089C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5861970919030F6D000089C9 /* Build configuration list for PBXNativeTarget "LeyeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5861970A19030F6D000089C9 /* Debug */,
+				5861970B19030F6D000089C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5861970C19030F6D000089C9 /* Build configuration list for PBXNativeTarget "LeyeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5861970D19030F6D000089C9 /* Debug */,
+				5861970E19030F6D000089C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 586196CC19030F6C000089C9 /* Project object */;
+}
