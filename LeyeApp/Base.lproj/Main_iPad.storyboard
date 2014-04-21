@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LAViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LAMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,176 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSC-vF-Fq4">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Vxn-so-bRR" kind="embed" id="YS0-r7-KM7"/>
+                                </connections>
+                            </containerView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bWi-pK-cg4">
+                                <rect key="frame" x="0.0" y="882" width="768" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="135-No-Tb1" kind="embed" id="JMH-lL-EOo"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q68-AR-5g0">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7Jg-dL-G2n" appends="YES" id="yZu-Xa-z3v"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="TTO-hK-dHH" kind="modal" identifier="PreviewSegue" id="BgD-7p-cao"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7Jg-dL-G2n">
+                    <connections>
+                        <action selector="tapHandler:" destination="BYZ-38-t0r" id="Ev9-kJ-gTR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-259" y="-111"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="Crc-vX-NYA">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Vxn-so-bRR" customClass="LACameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JTE-Qp-xhg"/>
+                        <viewControllerLayoutGuide type="bottom" id="sAg-6h-Jqy"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wxx-rK-wWF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5Z-7i-JsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="-827"/>
+        </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="JWc-bH-FIL">
+            <objects>
+                <viewController id="TTO-hK-dHH" customClass="LAPreviewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bb1-eE-J85"/>
+                        <viewControllerLayoutGuide type="bottom" id="m1E-r5-Iqc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tdC-xN-BFP">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYM-RT-JMo">
+                                <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Uzc-14-Ki2">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0QK-r8-7aV">
+                                            <connections>
+                                                <segue destination="UhQ-xV-r6C" kind="unwind" unwindAction="unwindToMain:" id="YCk-bt-grk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Edit" id="DZ0-yL-WIo">
+                                            <connections>
+                                                <action selector="tapEdit:" destination="TTO-hK-dHH" id="sGu-J8-v61"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKa-Gz-Rqr">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="H2b-M1-bAP">
+                                        <barButtonItem key="leftBarButtonItem" title="Share" id="E7O-hh-pzc">
+                                            <connections>
+                                                <action selector="tapShare:" destination="TTO-hK-dHH" id="cD1-Xo-cFy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="cUh-Ic-mg5">
+                                            <connections>
+                                                <action selector="tapSave:" destination="TTO-hK-dHH" id="Jh1-Ol-BLa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRg-zU-h4Z">
+                                <rect key="frame" x="41" y="64" width="687" height="916"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="PRg-zU-h4Z" id="sVk-eD-WcR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9G-7W-tHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="UhQ-xV-r6C" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="-280"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="2Z9-pq-OBT">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="135-No-Tb1" customClass="LACollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="5g3-2X-Zwg">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="142"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m3N-18-FRa">
+                            <size key="itemSize" width="90" height="120"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="wO6-L9-XsO">
+                                <rect key="frame" x="10" y="11" width="90" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="135-No-Tb1" id="lPT-wX-a2B"/>
+                            <outlet property="delegate" destination="135-No-Tb1" id="BIe-RG-yVM"/>
+                            <outletCollection property="gestureRecognizers" destination="XlM-6J-DD4" appends="YES" id="7ch-e9-1cx"/>
+                            <outletCollection property="gestureRecognizers" destination="aFN-m0-li2" appends="YES" id="5C5-vz-iHx"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5fc-ZT-iIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aFN-m0-li2">
+                    <connections>
+                        <action selector="tapHandler:" destination="135-No-Tb1" id="qvk-D9-OW6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="XlM-6J-DD4">
+                    <connections>
+                        <action selector="swipeHandler:" destination="135-No-Tb1" id="920-ag-Fpc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="768" y="657"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
