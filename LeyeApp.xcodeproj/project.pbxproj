@@ -62,6 +62,7 @@
 		5861978E1903104C000089C9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5861976A1903104C000089C9 /* UIView+Frame.m */; };
 		5861978F1903104C000089C9 /* _CLImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5861976D1903104C000089C9 /* _CLImageEditorViewController.m */; };
 		586197901903104C000089C9 /* _CLImageEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5861976E1903104C000089C9 /* _CLImageEditorViewController.xib */; };
+		588E24171A23DE07002D99A0 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 588E24161A23DE07002D99A0 /* COPYING */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +175,7 @@
 		5861976C1903104C000089C9 /* _CLImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CLImageEditorViewController.h; sourceTree = "<group>"; };
 		5861976D1903104C000089C9 /* _CLImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CLImageEditorViewController.m; sourceTree = "<group>"; };
 		5861976E1903104C000089C9 /* _CLImageEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _CLImageEditorViewController.xib; sourceTree = "<group>"; };
+		588E24161A23DE07002D99A0 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				5861971E1903104C000089C9 /* CLImageEditor */,
+				588E24161A23DE07002D99A0 /* COPYING */,
 				5861970F19031015000089C9 /* LACameraViewController.h */,
 				5861971019031015000089C9 /* LACameraViewController.m */,
 				5861971119031015000089C9 /* LACollectionViewController.h */,
@@ -540,6 +543,7 @@
 				586196EE19030F6D000089C9 /* Main_iPad.storyboard in Resources */,
 				586196F319030F6D000089C9 /* Images.xcassets in Resources */,
 				586197901903104C000089C9 /* _CLImageEditorViewController.xib in Resources */,
+				588E24171A23DE07002D99A0 /* COPYING in Resources */,
 				5861976F1903104C000089C9 /* CLImageEditor.bundle in Resources */,
 				586196EB19030F6D000089C9 /* Main_iPhone.storyboard in Resources */,
 				586196E219030F6D000089C9 /* InfoPlist.strings in Resources */,
